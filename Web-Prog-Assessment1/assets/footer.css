@@ -1,0 +1,71 @@
+/* CSS Document */
+.footer-container{
+	width: 80%;
+	min-width: 1024px;
+	display: flex;
+	padding: 20px 0px 20px 0px;
+}
+
+.footer-container h1{
+	font-size: 25px;
+	color:#FFFFFF;
+}
+
+
+
+.footer-container #left{
+	display:flex;
+	flex-direction: column;
+	font-size: 16px;
+	color:#FFFFFF;
+	line-height: 2;
+
+	width:40%;
+	
+  	margin: 10px 0px 10px 10px;
+  	padding: 20px 30px 20px 20px;
+}
+
+/*footer img*/
+.footer-container #left img{
+	height:50px; 
+	width:150px;
+}
+
+.footer-container .link a{
+	padding-right: 10px;
+}
+
+
+
+.footer-container #right{	
+	display:flex;
+	flex-direction: column;
+	font-size: 16px;
+	color:#FFFFFF;
+	width:40%;
+		
+	margin: 10px;
+  	padding: 20px;
+}
+
+
+.footer-container #right a{	
+	padding-top: 10px;
+	text-decoration-line:underline;
+}
+
+
+
+/*link property*/
+.footer a:link, .footer a:active, .footer a:hover, .footer a:visited{
+	color: #FFFFFF !important;
+	text-decoration-line:underline !important;
+	font-weight: 400 !important;
+}
+
+
+/*footer heading*/
+.footer .footer-head1{
+	font-weight: 700;
+}

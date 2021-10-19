@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Member Login | Life - Living It Fully Everyday</title>
+<link rel="stylesheet" href="assets/layout.css">
+<link rel="stylesheet" href="assets/navbar.css">
+<link rel="stylesheet" href="assets/footer.css">
+<link rel="stylesheet" href="assets/content.css">
+<link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet" type="text/css">
+<script src="assets/accounts.js"></script>
+</head>
+
+<body>
+<div class="flex-container"> 
+  
+  <!--Nav Bar-->
+  <div class="navbar sticky">
+    <div class="nav-container">
+      <div class="logo"> <img src="assets/images/LIFE-logos.jpeg" alt="LIFE"> </div>
+      <div class="menu">
+        <div class="menu item"> <a href="index.html">Home</a> </div>
+        <div class="menu item"> <a href="service.html">Service</a> </div>
+        <div class="menu item"> <a href="contact.html">Contact us</a> </div>
+        <div class="menu item btn login"> <a href="login.html">Login</a> </div>
+        <div class="menu item btn register"> <a href="register.html">Register</a> </div>
+	    <div class="menu item btn meal-planner"> <a href="meal-planner.html">&nbsp; &nbsp; &nbsp;Meal Planner</a> </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!--To avoid sticky nav bar block content-->
+  <div class="sticky-protect-bar"></div>
+  
+  <!--Announcement Bar-->
+  <div class="accouncements"> <a>For the latest Coronavirus (COVID-19) Victoria updates, restrictions, travel permits and exposure sites, visit the Victorian Government's Coronavirus website</a> </div>
+  
+  <!--Main Content Area-->
+  <div class="content">
+    <div class="content-container">
+      <div id="members-form-decoration"> <img src="assets/images/account.svg" alt="LIFE" style="padding-top: 10px;"> </div>
+      <div id="members-form" style="width:40%; padding-left: 100px">
+        <h1>Log in to LIFE</h1>
+        <br>
+        <form action="" method="post">
+          <label class="contact-label" for="usrname">Username</label>
+          <br>
+          <input type="text"  id="usrname" name="usrname" required>
+          <br>
+          <br>
+          <label class="contact-label" for="pswd">Password</label>
+          <br>
+          <input type="password" id="pswd" name="pswd" required>
+          <br>
+          <br>
+          <br>
+          <input class="contact-submit" type="submit" value="Login" onclick="alertLoginBtnOnClick();">
+          <br>
+          <br>
+          <span id="">Not have an account?&nbsp;&nbsp;<a href="register.html">Register</a></span>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+  
+  <!--Footer Area-->
+  <div class="footer">
+    <div class="footer-container">
+      <div id="left"> <img src="assets/images/LIFE-logos_white.png" alt="LIFE"> <a>By using this site, you agree to our Cookie Policy and Privacy Policy.<br>
+        Copyright 2021 by Peter Liu. All Rights Reserved.</a>
+        <h1 class="footer-head1">Sitemap</h1>
+        <div class="link"> <a href="index.html">Home</a> <a href="service.html">Service</a> <a href="contact.html">Contact</a> <a href="register.html">Register</a> <a href="login.html">Login</a> <br><a href="meal-planner.html">Meal Planner</a></div>
+      </div>
+      <div id="right">
+        <h1 class="footer-head1">COVID-19 resources</h1>
+        <a href="https://www.dhhs.vic.gov.au/" target="_blank">Department of Health and Human Services Victoria</a> <a href="https://www.health.gov.au/" target="_blank">Australian Government Department of Health</a> <a href="https://business.vic.gov.au/" target="_blank">Buiness Victoria - Support for Victorian businesses</a> <a href="https://www.australia.gov.au/" target="_blank">Australian Government</a> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

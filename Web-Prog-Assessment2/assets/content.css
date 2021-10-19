@@ -1,0 +1,178 @@
+/* CSS Document */
+/*container of main content area*/
+.content-container, .home-content-container {
+  width: 70%;
+  min-width: 1024px;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.service-page-container{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+
+.article-content-container{
+  padding: 50px;
+}
+
+
+/*left and right inner container*/
+.content #contact-form, .content #members-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/*----- register page -----*/
+/*left register in heading*/
+.content #members-form h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #061b36;
+  text-align: center;
+  width: 90%;
+}
+.content .radio_col {
+  padding-bottom: 12px;
+  font-size: 17px;
+}
+.content #members-form-decoration {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  text-align: center;
+}
+.content a:link, .content a:visited, .content a:hover, .content a:active {
+  color: #5A49E3 ;
+  font-weight: 600 ;
+}
+.content input[type=memberFeeDisplayer] {
+  font-size: 30px;
+  width: 90%;
+  height: 35px;
+  border: none;
+  font-family: "Noto Sans", sans-serif, Arial;
+  font-weight: 600;
+  color: #5949E3
+}
+/*range slider displayer style*/
+.content input[type=sliderDisplayer] {
+  padding-top: 10px;
+  height: 35px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+  width: 30px;
+  border: none;
+  font-weight: 600;
+  text-align: right;
+}
+/*----- contact page -----*/
+/*left contact us haeding*/
+.content #contact-form h1, .content #contact-form-decoration #altinfo h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #061b36;
+}
+.content #contact-form-decoration {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.content #contact-form-decoration #altinfo span {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content #contact-form-decoration #altinfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+/*----- forms -----*/
+/*form require star label*/
+.content #contact-form a, .content #members-form-post a, .content #contact-form a:hover, .content #members-form-post a:hover, .error-msg, error-msg:hover {
+  color: #FF0004 !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+}
+/*form label style*/
+.content .contact-label {
+  font-size: 15px;
+  font-weight: 300;
+  color: #061b36;
+}
+.content .inline-description {
+  margin-top: 20px;
+  color: #656565;
+}
+/*input area style*/
+.content input[type=text], .content input[type=email], .content input[type=tel], .content input[type=password] {
+  width: 90%;
+  height: 35px;
+  border: 1px solid #C5CEE0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+}
+
+/*error msg*/
+.content label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.content input.error, .content textarea.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
+}
+
+
+/*range slider style*/
+.content input[type="range"] {
+  -webkit-appearance: none; /* Disable original style in safari */
+  width: 81%;
+  font-family: "Noto Sans", sans-serif, Arial;
+  background: #5A49E3;
+  height: 4px;
+}
+.content input[type=radio] {
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+/*long text area style*/
+.content textarea {
+  width: 90%;
+  height: 35px;
+  border: 1px solid #C5CEE0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+}
+/*submit btn style*/
+.content [type=submit] {
+  background-color: #5949E3;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+}
+/*submit btn style in login and register*/
+#members-form [type=submit] {
+  border-radius: 8px !important;
+  width: 90% !important;
+}
+

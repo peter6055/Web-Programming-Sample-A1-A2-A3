@@ -1,0 +1,99 @@
+/* CSS Document */
+
+/*Nav bar style */
+.nav-container{
+	width: 70%;
+	display:flex;
+}
+
+/*Nav bar logo style */
+.logo{
+	margin-top: 9px;
+}
+
+/*logo img size*/
+.logo img{
+	height:50px;
+}
+
+/*Nav bar menu style*/
+.menu{
+    margin-left:auto;
+	margin-top: 8px;	
+	display:flex;
+}
+
+/*Nav bar menu item style*/
+.menu .item{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top:8px;
+	font-weight: 500;
+	height:30px;
+	font-size:15px;
+}
+
+/*Nav bar menu btn style*/
+.menu .btn{
+	border: 0px solid rgba(0, 0, 0, 0.51);
+	border-radius: 20px;
+	margin-left: 20px
+}
+
+/*Nav bar menu login btn style*/
+.menu .login {
+	font-weight: 600;
+	border: #5A49E3 1.5px solid;
+	padding-top:5px;
+}
+
+/*Nav bar menu register btn style*/
+.menu .register {
+	background-color: #5A49E3;
+}
+
+/*Nav bar menu login btn style*/
+.menu .meal-planner {
+	padding-top:8px;
+	box-shadow: 1px 0px 13px 1px #D5D7DC;
+	border: 1px #ABABAB solid;
+	border-radius: 40px;
+	background: url("images/french-fries.svg");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 15px 7px;
+}
+
+/*Nav bar menu login btn font style*/
+.menu .login a:link, .menu .login a:active, .menu .login a:hover, .menu .login a:visited{
+	color: #5A49E3;
+}
+
+/*Nav bar menu register btn font style*/
+.menu .register a:link, .menu .register a:active, .menu .register a:hover, .menu .register a:visited{
+	color:#FFFFFF;
+}
+
+/*Nav bar menu login btn font style*/
+.menu .meal-planner a:link, .menu .meal-planner a:active, .menu .meal-planner a:hover, .menu .meal-planner a:visited{
+	color: #0D0D0D;
+	font-weight: 300;
+	
+}
+
+
+
+.accouncements {
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+}
+
+
+
+/*link property*/
+a:link, .menu a:active, .menu a:hover, .menu a:visited{
+	color: #000000;
+	text-decoration-line: none;
+	font-weight: 400;
+}

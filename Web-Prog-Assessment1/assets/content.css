@@ -1,0 +1,560 @@
+/* CSS Document */
+/*container of main content area*/
+.content-container, .home-content-container {
+  width: 70%;
+  min-width: 1024px;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.service-page-container{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+
+.article-content-container{
+  padding: 50px;
+}
+
+
+/*left and right inner container*/
+.content #contact-form, .content #members-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/*----- register page -----*/
+/*left register in heading*/
+.content #members-form h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #061b36;
+  text-align: center;
+  width: 90%;
+}
+.content .radio_col {
+  padding-bottom: 12px;
+  font-size: 17px;
+}
+.content #members-form-decoration {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  text-align: center;
+}
+.content a:link, .content a:visited, .content a:hover, .content a:active {
+  color: #5A49E3 !important;
+  font-weight: 600 !important;
+}
+.content input[type=memberFeeDisplayer] {
+  font-size: 30px;
+  width: 90%;
+  height: 35px;
+  border: none;
+  font-family: "Noto Sans", sans-serif, Arial;
+  font-weight: 600;
+  color: #5949E3
+}
+/*range slider displayer style*/
+.content input[type=sliderDisplayer] {
+  padding-top: 10px;
+  height: 35px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+  width: 30px;
+  border: none;
+  font-weight: 600;
+  text-align: right;
+}
+/*----- contact page -----*/
+/*left contact us haeding*/
+.content #contact-form h1, .content #contact-form-decoration #altinfo h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #061b36;
+}
+.content #contact-form-decoration {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.content #contact-form-decoration #altinfo span {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content #contact-form-decoration #altinfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+/*----- meal planner page -----*/
+#meal-left-col {
+  background: url("images/meal-bg1.svg");
+  background-repeat: no-repeat;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#meal-left-col input[type="number"] {
+  border-top: 0px !important;
+  border-buttom: 10px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
+  width: 180px;
+  font-weight: 900;
+  font-size: 48px;
+  font-family: "Lato", sans-serif !important;
+  color: #061b36;
+  text-align: center;
+}
+#meal-left-col h1 {
+  font-weight: 900;
+  font-size: 48px;
+  font-family: "Lato", sans-serif !important;
+  color: #061b36;
+  line-height: 65px;
+}
+/*Hide default style*/
+#meal-left-col input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+/* Styling the unchecked status */
+#meal-left-col label {
+  background: #FCFEFF;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 12px 9px #F1F4F9;
+  border-radius: 40px;
+  padding: 9px 24px 9px 24px;
+  font-family: "Nato", sans-serif !important;
+  font-weight: 300;
+  margin-right: 22px;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* Styling the checked status */
+#meal-left-col input[type="radio"]:checked + label {
+  background: #AC77F0;
+  box-shadow: 0px 4px 12px rgba(162, 89, 255, 0.74);
+  border-radius: 40px;
+  border: 1px solid #AC77F0;
+  color: #F7F7F7;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* Styling the hover status */
+#meal-left-col label:hover {
+  box-shadow: 1px 0px 13px 1px #D5D7DC;
+  border: 1px #ABABAB solid;
+  transition: all 1s;
+}
+/* submit and reset button*/
+#meal-left-col #submit_btn, #meal-left-col #reset_btn {
+  color: #7519EB;
+  font-size: 36px;
+  width: 100%;
+  background-color: #FFFFFF !important;
+  padding-left: 0px;
+  text-align: left;
+  background: url("images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: 295px 13px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif !important;
+}
+/* hide the reset button for default*/
+#meal-left-col #reset_btn {
+  display: none;
+  background: url("images/refresh-cw.svg");
+  background-repeat: no-repeat;
+  background-position: 310px 18px;
+}
+#meal-left-col a:hover {
+  color: #000000 !important;
+  font-weight: 300 !important;
+}
+.result-col-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#meal-right-col {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+/*-------- Overview bar --------*/
+/*Overview container*/
+#result-col-overview {
+  background: url("images/result_bg.svg") #A259FF;
+  width: 407px;
+  height: 205px;
+  border-radius: 27px;
+  margin: 36px 30px 0px 0px;
+}
+/*Overview total calories*/
+#overview-cals {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #FEFEFE;
+  padding-top: 36px;
+  padding-left: 40px;
+}
+/*Overview total calories*/
+#overview-cals-remain {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FEFEFE;
+  padding-top: 8px;
+  padding-left: 40px;
+}
+/*Overview total calories*/
+#overview-pricing {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FEFEFE;
+  padding-top: 17px;
+  padding-left: 40px;
+}
+/*-------- List meal --------*/
+/*Heading for meal time*/
+.result-col-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3D3D3D;
+  padding-top: 23px;
+}
+/*meal container*/
+.result-col-item {
+  background: #FCFEFF;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px 8px #F1F4F9;
+  border-radius: 20px;
+  width: 407px;
+  margin-top: 20px
+}
+/*meal image*/
+.result-col-image {
+  height: 98px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 9px;
+  background-size: auto 118px;
+  background-repeat: no-repeat;
+}
+/*meal heading*/
+.result-col-item-heading {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #3D3D3D;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 25ch;
+}
+/*meal inline article: price and calories for each meal*/
+.result-col-item-article {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #3D3D3D;
+}
+.result-col-item-content {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+/*----- forms -----*/
+/*form require star label*/
+.content #contact-form a, .content #members-form a {
+  color: #FF0004;
+}
+/*form label style*/
+.content .contact-label {
+  font-size: 15px;
+  font-weight: 300;
+  color: #061b36;
+}
+.content .inline-description {
+  margin-top: 20px;
+  color: #656565;
+}
+/*input area style*/
+.content input[type=text], .content input[type=email], .content input[type=tel], .content input[type=password] {
+  width: 90%;
+  height: 35px;
+  border: 1px solid #C5CEE0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+}
+/*range slider style*/
+.content input[type="range"] {
+  -webkit-appearance: none; /* Disable original style in safari */
+  width: 81%;
+  font-family: "Noto Sans", sans-serif, Arial;
+  background: #5A49E3;
+  height: 4px;
+}
+.content input[type=radio] {
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+/*long text area style*/
+.content textarea {
+  width: 90%;
+  height: 35px;
+  border: 1px solid #C5CEE0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif, Arial;
+}
+/*submit btn style*/
+.content [type=submit] {
+  background-color: #5949E3;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+}
+/*submit btn style in login and register*/
+#members-form [type=submit] {
+  border-radius: 8px !important;
+  width: 90% !important;
+}
+
+
+
+
+
+
+/*----- service page -----*/
+
+#service-page{
+	width:100%;
+	height: 300px;
+	background: url("images/service_bg.svg");
+}
+
+#service-header-heading h1{
+	color: #FFFFFF;
+	font-size: 40px;
+    font-family: "Lato", sans-serif !important;
+    padding-top: 20px;
+}
+
+
+#service-header-heading h2{
+	color: #FFFFFF;
+	font-size: 18px;
+    font-family: "Noto Sans", sans-serif !important;
+	font-weight: 300;
+	width:80%;
+}
+
+#service-header-heading{
+	width: 50%;
+}
+
+
+#service-header-dec{
+	background: url("images/service_illus.svg");
+	width: 50%;
+	background-repeat: no-repeat;
+    background-position: center top;    
+	display: flex;
+}
+	
+.content-container .activity{
+	width:30%;
+	background:#FFFFFF;
+	margin:25px;
+	padding:20px;
+	height:670px;
+	border-radius: 15px;
+	border-right: #5A49E3 solid 10px;
+	box-shadow: 0px 4px 14px 8px #d8d8d8;
+    transition: all 1s;
+}
+
+
+/* Styling the hover activity */
+.content-container .activity:hover {
+  box-shadow: 0px 4px 20px 13px #bfbfbf;
+  transition: all 1s;
+}
+
+.content-container .activity .cover {
+	height: 200px;
+    background-size: 100% auto;
+}
+
+
+.content-container .activity span.status{
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+.content-container .activity span.method {
+    font-size: 18px;
+    color: #494949;
+}
+
+.content-container .activity h1.title {
+    margin-bottom: 10px;
+    font-family: 'lato';
+    color: #201547;
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.content-container .activity h2.sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lato';
+    color: #201547;
+}
+
+
+.content-container .activity span.article {
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #494949;
+	line-height: 30px;
+}
+
+
+
+/*----- service page post -----*/
+/*post back to previous page btn*/
+.inpara-back-btn{
+	cursor: pointer;
+	background: url("images/arrow1.png") no-repeat;
+	background-size: 40px auto;
+	background-position: center left;
+}
+
+/*post heading 1 style*/
+.inpara-head1 {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 60px;
+	color: rgb(32, 21, 71);
+	
+}
+
+/*post heading 2 style*/
+.inpara-head2 {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 30px;
+	color: rgb(32, 21, 71);
+	margin-top: 50px;
+}
+
+/*post article style*/
+.inpara-article {
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    font-size: 19px;
+    color: rgb(41, 41, 41);
+}
+
+/*img container*/
+.inpara-img {
+	height: 400px;
+	box-shadow: 0px 4px 14px 8px #d8d8d86e;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+/*blue warning container*/
+.blue-container{
+	background: rgb(137, 208, 205);
+	border-radius: 6px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+/*yellow warning container*/
+.yellow-container{
+	background: #ffd187;
+	border-radius: 6px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+
+/*yellow warning container*/
+.purple-container{
+	background: #b7a9d6;
+	border-radius: 6px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+
+/*warning container heading*/
+.inpara-container-head{
+	margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/*warning container blue icon*/
+.inpara-container-blue-icon{
+	background: url("images/icons8-info.svg") no-repeat;
+	background-size: 38px auto;
+}
+
+/*warning container yellow icon*/
+.inpara-container-yellow-icon{
+	background: url("images/icons8-for-you.svg") no-repeat;
+	background-size: 40px auto;
+}
+
+/*warning container yellow icon*/
+.inpara-container-purple-icon{
+	background: url("images/icons8-sun.svg") no-repeat;
+	background-size: 40px auto;
+}
+
+/*warning container yellow button*/
+.inpara-container-btn{
+	background-color: #423863;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 17px;
+    font-weight: 300;
+	text-align:center;
+	margin-top:20px;
+}
+
+

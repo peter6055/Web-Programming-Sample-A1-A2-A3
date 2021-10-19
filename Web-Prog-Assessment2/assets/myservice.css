@@ -1,0 +1,219 @@
+.errorMsg{
+    color: #FF0000FF;
+    padding-top: 5px;
+}
+
+[name='meal-form']{
+    position: fixed;
+    width: 40%;
+}
+
+#meal-left-col {
+    /*background: url("images/meal-bg1.svg");*/
+    /*background-repeat: no-repeat;*/
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#meal-left-col input[type="number"] {
+    border-top: 0px !important;
+    border-buttom: 10px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+    width: 180px;
+    font-weight: 900;
+    font-size: 48px;
+    font-family: "Lato", sans-serif !important;
+    color: #061b36;
+    text-align: center;
+}
+#meal-left-col h1 {
+    font-weight: 900;
+    font-size: 40px;
+    font-family: "Lato", sans-serif !important;
+    color: #061b36;
+    line-height: 65px;
+}
+/*Hide default style*/
+#meal-left-col input[type=radio] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+/* Styling the unchecked status */
+#meal-left-col label {
+    background: #FCFEFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 12px 9px #F1F4F9;
+    border-radius: 40px;
+    padding: 9px 24px 9px 24px;
+    font-family: "Nato", sans-serif !important;
+    font-weight: 300;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 1s;
+}
+/* Styling the checked status */
+#meal-left-col input[type="radio"]:checked + label {
+    background: #AC77F0;
+    box-shadow: 0px 4px 12px rgba(162, 89, 255, 0.74);
+    border-radius: 40px;
+    border: 1px solid #AC77F0;
+    color: #F7F7F7;
+    cursor: pointer;
+    transition: all 1s;
+}
+/* Styling the hover status */
+#meal-left-col label:hover {
+    box-shadow: 1px 0px 13px 1px #D5D7DC;
+    border: 1px #ABABAB solid;
+    transition: all 1s;
+}
+/* submit and reset button*/
+#meal-left-col #submit_btn, #meal-left-col #reset_btn {
+    color: #7519EB;
+    font-size: 36px;
+    width: 100%;
+    /*background-color: #FFFFFF !important;*/
+    padding-left: 0px;
+    text-align: left;
+    background: url("images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 255px 5px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif !important;
+    border: none;
+}
+
+#meal-left-col a:hover {
+    color: #000000 !important;
+    font-weight: 300 !important;
+}
+.result-col-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#meal-right-col {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+/*-------- Overview bar --------*/
+/*Overview container*/
+#result-col-overview {
+    background: url("images/result_bg.svg") #A259FF;
+    width: 407px;
+    height: 160px;
+    border-radius: 27px;
+    margin: 18px 30px 0px 0px;
+}
+/*Overview total calories*/
+#overview-cals {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FEFEFE;
+    padding-top: 36px;
+    padding-left: 40px;
+}
+/*Overview total calories*/
+#overview-cals-remain {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FEFEFE;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+/*Overview total calories*/
+#overview-pricing {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FEFEFE;
+    padding-top: 17px;
+    padding-left: 40px;
+}
+/*-------- List meal --------*/
+/*Heading for meal time*/
+.result-col-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3D3D3D;
+    padding-top: 23px;
+}
+/*meal container*/
+.result-col-item {
+    background: #FCFEFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 14px 8px #F1F4F9;
+    border-radius: 20px;
+    width: 407px;
+    margin-top: 20px
+}
+/*meal image*/
+.result-col-image {
+    height: 98px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 9px;
+    background-size: auto 118px;
+    background-repeat: no-repeat;
+}
+/*meal heading*/
+.result-col-item-heading {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #3D3D3D;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 25ch;
+}
+/*meal inline article: price and calories for each meal*/
+.result-col-item-article {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #3D3D3D;
+}
+.result-col-item-content {
+    /*padding-top: 15px;*/
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.pad-l-300{
+    padding-left: 265px;
+}
+
+.pad-t-85{
+    padding-top: 85px;
+}
+
+.po-fixed{
+    position: fixed;
+}
+
+.z-index-max{
+    z-index: 999999;
+    background-color: white;
+}
+
+

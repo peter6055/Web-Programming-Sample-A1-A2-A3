@@ -1,0 +1,118 @@
+/* CSS Document */
+#banner-1, #banner-2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.col-service{
+	width: 25%;
+	padding: 30px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#banner-1{
+	margin-top: 30px;
+}
+
+#banner-2{
+	background-repeat: no-repeat;
+	background-size: 400px auto;
+	background-position: center 30px;	
+}
+.inpage-head1{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 77px;
+    letter-spacing: -2.50105px;
+}
+
+.inpage-head2{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+    margin-top: 30px;
+}
+
+.inpage-head3{
+	font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.inpage-article {
+    word-break: break-all;
+}
+
+.inpara-btn{
+	background-color: #5454D4;
+    color: white;
+	font-weight: 600;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+	text-align:center;
+	margin-top:20px;
+	width: 200px;
+}
+
+.inpage-center{
+	text-align: center;
+}
+
+
+
+.home-content-container .yellow-container, .home-content-container .purple-container{
+	margin-left: 30px !important;
+	width: 25%;
+}
+
+.home-content-container  .inpara-head2{
+	font-size: 26px !important;
+	line-height: 1.5;
+}
+
+.inpage-icon-img{
+	align-self: center;
+}
+
+
+
+.head-white-color{
+	color: #FFFFFF;
+}
+
+.membership-btn{
+	background: #9F3919;
+	width: 70%;
+	border: none;
+}
+
+
+#pricing-container-left{
+	margin-top: 40px;
+	width: 40%; 
+	padding-left: 100px;
+}
+
+#pricing-container-mid{
+	width: 10%
+}
+
+#pricing-container-right{
+	background: #FF7143;
+	box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+	border-radius: 10px;
+	height: 473px;
+	width: 40%;
+	text-align: center;
+}
